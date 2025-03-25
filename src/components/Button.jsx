@@ -1,4 +1,4 @@
-import "./index.css";
+import "../index.css";
 
 export function Button({ children, onClick, className }) {
   return (
