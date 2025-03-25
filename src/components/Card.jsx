@@ -1,4 +1,4 @@
-import "./index.css";
+import "../index.css";
 
 export function Card({ children, className }) {
   return <div className={`card ${className}`}>{children}</div>;

@@ -13,12 +13,18 @@ const languages = [
 ];
 
 export default function App() {
+  //useState(languages[0]) > inizializzo la variabile con il primo linguaggio dell'array
+  //selectedLanguage > variabile che tiene traccia del linguaggio selezionato
+  //setSelectedLanguage > funzione per aggiornare selectedLanguage
   const [selectedLanguage, setSelectedLanguage] = useState(languages[0]);
 
   return (
     <div>
       <div>
+        //creo un pulsante per ogni linguaggio presente nell'array languages
         {languages.map((lang) => (
+          //key={lang.name} > identificatore unico per ogni elemento generato dinamicamente
+          //onClick={() => setSelectedLanguage(lang)} > quando si clicca sul pulsante, aggiorniamo selectedLanguage con il linguaggio corrispondente
           <Button key={lang.name} onClick={() => setSelectedLanguage(lang)}>
             {lang.name}
           </Button>
