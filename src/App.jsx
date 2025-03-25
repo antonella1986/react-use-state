@@ -21,7 +21,7 @@ export default function App() {
   return (
     <div>
       <div>
-        //creo un pulsante per ogni linguaggio presente nell'array languages
+
         {languages.map((lang) => (
           //key={lang.name} > identificatore unico per ogni elemento generato dinamicamente
           //onClick={() => setSelectedLanguage(lang)} > quando si clicca sul pulsante, aggiorniamo selectedLanguage con il linguaggio corrispondente
